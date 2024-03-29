@@ -24,10 +24,9 @@ class _UserWidgetState extends State<UserWidget> {
   TextEditingController dateController = TextEditingController();
   FocusNode dateNode = FocusNode();
 
-
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: white,
       body: SafeArea(
         child: SingleChildScrollView(
@@ -35,15 +34,20 @@ class _UserWidgetState extends State<UserWidget> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(height: 80,),
-
-              Center(
-                child: Image.asset('assets/images/update_user.png',),
+              const SizedBox(
+                height: 80,
               ),
-              const SizedBox(height: 50,),
-
+              Center(
+                child: Image.asset(
+                  'assets/images/update_user.png',
+                ),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'Nome Completo',
@@ -52,10 +56,12 @@ class _UserWidgetState extends State<UserWidget> {
                   onFieldSubmit: (_) {
                     emailNode.requestFocus();
                   },
+                  obscureText: false,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'E-mail',
@@ -64,10 +70,12 @@ class _UserWidgetState extends State<UserWidget> {
                   onFieldSubmit: (_) {
                     passNode.requestFocus();
                   },
+                  obscureText: false,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'Senha',
@@ -75,12 +83,13 @@ class _UserWidgetState extends State<UserWidget> {
                   focus: confirmPassNode,
                   onFieldSubmit: (_) {
                     confirmPassNode.requestFocus();
-
                   },
+                  obscureText: true,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'Confirmar Senha',
@@ -88,12 +97,13 @@ class _UserWidgetState extends State<UserWidget> {
                   focus: confirmPassNode,
                   onFieldSubmit: (_) {
                     contactNode.requestFocus();
-
                   },
+                  obscureText: true,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'Contato de Emergencia',
@@ -101,33 +111,27 @@ class _UserWidgetState extends State<UserWidget> {
                   focus: contactNode,
                   onFieldSubmit: (_) {
                     dateNode.requestFocus();
-
                   },
+                  obscureText: false,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'Data de Nascimento',
                   textEditingController: dateController,
                   focus: dateNode,
                   onFieldSubmit: (_) {},
+                  obscureText: false,
                 ),
               ),
-
               Padding(
-                padding: const EdgeInsets.only(top: 16.0,bottom: 16),
+                padding: const EdgeInsets.only(top: 16.0, bottom: 16),
                 child: Button(
-                    height: 52,
-                    text: 'Salvar',
-                    fontSize: 16,
-                    onTap: () {
-                    }),
+                    height: 52, text: 'Salvar', fontSize: 16, onTap: () {}),
               ),
-
-
-
             ],
           ),
         ),
@@ -135,4 +139,3 @@ class _UserWidgetState extends State<UserWidget> {
     );
   }
 }
-

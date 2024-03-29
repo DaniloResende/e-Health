@@ -28,10 +28,9 @@ class _RegisterPageState extends State<RegisterPage> {
   TextEditingController dateController = TextEditingController();
   FocusNode dateNode = FocusNode();
 
-
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: white,
       body: SafeArea(
         child: SingleChildScrollView(
@@ -39,41 +38,49 @@ class _RegisterPageState extends State<RegisterPage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-
               GestureDetector(
-                onTap: (){
-                    Navigator.of(context).pop();
+                onTap: () {
+                  Navigator.of(context).pop();
                 },
                 child: const Padding(
-                  padding: EdgeInsets.only(top: 18.0,left: 18),
+                  padding: EdgeInsets.only(top: 18.0, left: 18),
                   child: Align(
                     alignment: Alignment.bottomLeft,
-                    child: Icon(Icons.arrow_back_ios,color: Colors.black,),
+                    child: Icon(
+                      Icons.arrow_back_ios,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
               Center(
-                child: Image.asset('assets/images/logo.png',width: 143,height: 146,),
-              ),
-              const SizedBox(height: 20,),
-              const Center(
-                  child: Text(
-                    'Criar conta',
-                    style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600),
-                  )
-              ),
-              const Padding(
-                padding: EdgeInsets.only(left: 32.0,right: 32,top: 18,bottom: 18),
-                child: Center(
-                    child: Text(
-                      'Bem vindo ao e-Health, digite seus dados abaixo para efetuar o registro.',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400),
-                    )
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  width: 143,
+                  height: 146,
                 ),
               ),
+              const SizedBox(
+                height: 20,
+              ),
+              const Center(
+                  child: Text(
+                'Criar conta',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+              )),
+              const Padding(
+                padding:
+                    EdgeInsets.only(left: 32.0, right: 32, top: 18, bottom: 18),
+                child: Center(
+                    child: Text(
+                  'Bem vindo ao e-Health, digite seus dados abaixo para efetuar o registro.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
+                )),
+              ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'Nome Completo*',
@@ -82,10 +89,12 @@ class _RegisterPageState extends State<RegisterPage> {
                   onFieldSubmit: (_) {
                     emailNode.requestFocus();
                   },
+                  obscureText: false,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'E-mail*',
@@ -94,10 +103,12 @@ class _RegisterPageState extends State<RegisterPage> {
                   onFieldSubmit: (_) {
                     passNode.requestFocus();
                   },
+                  obscureText: false,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'Senha*',
@@ -105,12 +116,13 @@ class _RegisterPageState extends State<RegisterPage> {
                   focus: confirmPassNode,
                   onFieldSubmit: (_) {
                     confirmPassNode.requestFocus();
-
                   },
+                  obscureText: true,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'Confirmar Senha*',
@@ -118,12 +130,13 @@ class _RegisterPageState extends State<RegisterPage> {
                   focus: confirmPassNode,
                   onFieldSubmit: (_) {
                     contactNode.requestFocus();
-
                   },
+                  obscureText: true,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'Contato de Emergencia*',
@@ -131,23 +144,24 @@ class _RegisterPageState extends State<RegisterPage> {
                   focus: contactNode,
                   onFieldSubmit: (_) {
                     dateNode.requestFocus();
-
                   },
+                  obscureText: false,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 22.0,right: 22,bottom: 16),
+                padding:
+                    const EdgeInsets.only(left: 22.0, right: 22, bottom: 16),
                 child: TextFieldCustom(
                   colorText: Colors.black,
                   label: 'Data de Nascimento*',
                   textEditingController: dateController,
                   focus: dateNode,
                   onFieldSubmit: (_) {},
+                  obscureText: false,
                 ),
               ),
-
               Padding(
-                padding: const EdgeInsets.only(top: 16.0,bottom: 16),
+                padding: const EdgeInsets.only(top: 16.0, bottom: 16),
                 child: Button(
                     height: 52,
                     text: 'Continuar',
@@ -156,9 +170,6 @@ class _RegisterPageState extends State<RegisterPage> {
                       AutoRouter.of(context).replace(const HomeRoute());
                     }),
               ),
-
-
-
             ],
           ),
         ),
