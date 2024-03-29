@@ -13,14 +13,14 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\debug\AndroidManifest.xml:6:5-66
-15-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\debug\AndroidManifest.xml:6:22-64
+15-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\debug\AndroidManifest.xml:6:22-64
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\main\AndroidManifest.xml:2:5-79
-16-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\main\AndroidManifest.xml:2:22-76
+16-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\main\AndroidManifest.xml:2:5-79
+16-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\main\AndroidManifest.xml:2:22-76
 17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-17-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\main\AndroidManifest.xml:3:5-81
-17-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\main\AndroidManifest.xml:3:22-78
+17-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\main\AndroidManifest.xml:3:5-81
+17-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\main\AndroidManifest.xml:3:22-78
 18    <!--
 19 Required to query activities that can process text, see:
 20         https://developer.android.com/training/package-visibility?hl=en and
@@ -29,16 +29,16 @@
 23         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 24    -->
 25    <queries>
-25-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\main\AndroidManifest.xml:41:5-46:15
+25-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\main\AndroidManifest.xml:41:5-46:15
 26        <intent>
-26-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\main\AndroidManifest.xml:42:9-45:18
+26-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\main\AndroidManifest.xml:42:9-45:18
 27            <action android:name="android.intent.action.PROCESS_TEXT" />
-27-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\main\AndroidManifest.xml:43:13-72
-27-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\main\AndroidManifest.xml:43:21-70
+27-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\main\AndroidManifest.xml:43:13-72
+27-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\main\AndroidManifest.xml:43:21-70
 28
 29            <data android:mimeType="text/plain" />
-29-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\main\AndroidManifest.xml:44:13-50
-29-->C:\Users\dbdresende\Documents\ehealth\ehealthapp\android\app\src\main\AndroidManifest.xml:44:19-48
+29-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\main\AndroidManifest.xml:44:13-50
+29-->C:\Users\dbdresende\Documents\Projeto\e_health\android\app\src\main\AndroidManifest.xml:44:19-48
 30        </intent>
 31    </queries>
 32

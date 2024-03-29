@@ -2,9 +2,6 @@ import 'package:ehealthapp/util/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-
-
-
 class TextFieldCustom extends StatelessWidget {
   final TextEditingController textEditingController;
   final TextInputAction? textInputAction;
@@ -21,6 +18,7 @@ class TextFieldCustom extends StatelessWidget {
   final IconData? suffixIcon;
   final String hint;
   final String label;
+  final bool obscureText;
 
   TextFieldCustom({
     required this.textEditingController,
@@ -38,11 +36,12 @@ class TextFieldCustom extends StatelessWidget {
     this.enable = true,
     this.color = colorTextField,
     this.colorText = primaryColor,
+    required this.obscureText,
   });
 
   _setFocusListener() {
     focus!.addListener(
-          () {
+      () {
         if (focus!.hasFocus) {
           textEditingController.selection = TextSelection(
               baseOffset: 0,
@@ -54,18 +53,22 @@ class TextFieldCustom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.only(left: 3.0,bottom: 8),
-          child: Text(label,style:  TextStyle(fontWeight: FontWeight.bold,color: colorText),),
+          padding: const EdgeInsets.only(left: 3.0, bottom: 8),
+          child: Text(
+            label,
+            style: TextStyle(fontWeight: FontWeight.bold, color: colorText),
+          ),
         ),
         TextFormField(
+          obscureText: obscureText,
           textAlign: TextAlign.center,
           enabled: enable,
           keyboardType: textInputType,
-          style: TextStyle(fontSize: fontSize,color: Colors.black),
+          style: TextStyle(fontSize: fontSize, color: Colors.black),
           textInputAction: textInputAction,
           focusNode: focus,
           onChanged: onFieldChanged != null
@@ -75,13 +78,22 @@ class TextFieldCustom extends StatelessWidget {
               ? (String string) => onFieldSubmit!(string)
               : null,
           controller: textEditingController,
-          inputFormatters: [UpperCaseTextFormatter(), ...inputFormatters != null ? inputFormatters! : List.empty()],
+          inputFormatters: [
+            // UpperCaseTextFormatter(),
+            ...inputFormatters != null ? inputFormatters! : List.empty()
+          ],
           decoration: InputDecoration(
             labelText: hint,
-            suffixIcon:suffixIcon != null ?   Padding(
-              padding: const EdgeInsets.only(right:10), // add padding to adjust icon
-              child: Icon(suffixIcon,size: 32,),
-            ) : null,
+            suffixIcon: suffixIcon != null
+                ? Padding(
+                    padding: const EdgeInsets.only(
+                        right: 10), // add padding to adjust icon
+                    child: Icon(
+                      suffixIcon,
+                      size: 32,
+                    ),
+                  )
+                : null,
             filled: true,
             fillColor: color,
             border: OutlineInputBorder(
@@ -93,7 +105,6 @@ class TextFieldCustom extends StatelessWidget {
       ],
     );
   }
-
 }
 
 class UpperCaseTextFormatter extends TextInputFormatter {
@@ -103,8 +114,3 @@ class UpperCaseTextFormatter extends TextInputFormatter {
     return newValue.copyWith(text: newValue.text.toUpperCase());
   }
 }
-
-
-
-
-

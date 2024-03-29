@@ -16,7 +16,7 @@ class WelcomePage extends StatefulWidget {
 class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: white,
       body: SafeArea(
         child: SingleChildScrollView(
@@ -24,61 +24,58 @@ class _WelcomePageState extends State<WelcomePage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(height: 80,),
-
-              Center(
-                child: Image.asset('assets/images/step.png',width: 90,height: 90,),
+              const SizedBox(
+                height: 80,
               ),
-              const SizedBox(height: 20,),
+              Center(
+                child: Image.asset(
+                  'assets/images/step.png',
+                  width: 90,
+                  height: 90,
+                ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
               const Center(
                   child: Text(
-                    'Detector de Quedas',
-                    style: TextStyle(fontSize: 28,fontWeight: FontWeight.w600),
-                  )
-              ),
+                'Detector de Quedas',
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600),
+              )),
               const Padding(
-                padding: EdgeInsets.symmetric(vertical: 28.0,horizontal: 28),
+                padding: EdgeInsets.symmetric(vertical: 28.0, horizontal: 28),
                 child: Center(
                     child: Text(
-                      'A principal função do aplicativo e-Health é detectar quedas, na pior das hipóteses de algo acontecer a você!',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),
-                    )
-                ),
+                  'A principal função do aplicativo e-Health é detectar quedas, na pior das hipóteses de algo acontecer a você!',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+                )),
               ),
               const Padding(
-                padding: EdgeInsets.symmetric(vertical: 28.0,horizontal: 28),
+                padding: EdgeInsets.symmetric(vertical: 28.0, horizontal: 28),
                 child: Center(
                     child: Text(
-                      'Para que nosso detector funcione como esperado, precisamos que voce tenha fornecido corretamente todos os seus dados.',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),
-                    )
-                ),
+                  'Para que nosso detector funcione como esperado, precisamos que você permita o acesso aos sensores do seu smartphone na proxima etapa.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+                )),
               ),
-
               Padding(
-                padding: const EdgeInsets.only(top: 32.0,bottom: 8),
+                padding: const EdgeInsets.only(top: 32.0, bottom: 8),
                 child: Button(
                     height: 52,
                     text: 'Continuar',
                     fontSize: 16,
-                    onTap: () async{
+                    onTap: () async {
                       await _checkLocationWhenInUseStatus(context);
-
                     }),
               ),
-
-
-
             ],
           ),
         ),
       ),
     );
   }
-
-
 
   static Future<void> _checkLocationWhenInUseStatus(context) async {
     var locationWhenInUsePermission = Permission.locationWhenInUse;
@@ -90,7 +87,7 @@ class _WelcomePageState extends State<WelcomePage> {
     AutoRouter.of(context).replace(const HomeRoute());
   }
 
-    // if (status.isGranted) {
-    //   await LocationAlwaysPermission.handleLocationAlwaysPermission();
-    //
+  // if (status.isGranted) {
+  //   await LocationAlwaysPermission.handleLocationAlwaysPermission();
+  //
 }
