@@ -1,26 +1,50 @@
-import 'package:e_health/home/bloc/counter_bloc.dart';
+import 'package:ehealthapp/router/router.dart';
+import 'package:ehealthapp/util/colors.dart';
 import 'package:flutter/material.dart';
-
-import 'home/home.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
-  runApp(MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+
+  runApp(const MyApp());
 }
 
+final appRouter = AppRouter();
+
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.black,
+      statusBarIconBrightness: Brightness.light,
+    ));
+
+    return MaterialApp.router(
+      title: 'E-HEALTH',
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [Locale('pt', 'BR')],
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        colorScheme: Theme.of(context).colorScheme.copyWith(
+              primary: primaryColor,
+            ),
+        textTheme: GoogleFonts.poppinsTextTheme(),
+        primaryColor: primaryColor,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: primaryColor,
+        ),
       ),
-      home: BlocProvider(
-        create: (context) => CounterBloc(),
-        child: Home(),
-      ),
+      routerDelegate: appRouter.delegate(),
+      routeInformationParser: appRouter.defaultRouteParser(),
     );
   }
 }
