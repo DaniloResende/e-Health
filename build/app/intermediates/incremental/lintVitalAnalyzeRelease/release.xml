@@ -1,0 +1,40 @@
+<variant
+    name="release"
+    package="com.ehealth.ehealthapp"
+    minSdkVersion="21"
+    targetSdkVersion="33"
+    shrinking="true"
+    mergedManifest="/Users/felipesouza/Documents/git/ehealthapp/build/app/intermediates/merged_manifest/release/AndroidManifest.xml"
+    proguardFiles="/Users/felipesouza/Documents/git/ehealthapp/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.3.0:/Users/felipesouza/Documents/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro:proguard-rules.pro"
+    partialResultsDir="/Users/felipesouza/Documents/git/ehealthapp/build/app/intermediates/lint_vital_partial_results/release/out"
+    desugaredMethodsFiles="/Users/felipesouza/.gradle/caches/transforms-3/14498295d12ae3f59ce75891b28c8b28/transformed/D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifest="src/main/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/main/kotlin"
+        resDirectories="src/main/res"
+        assetsDirectories="src/main/assets"/>
+    <sourceProvider
+        manifest="src/release/AndroidManifest.xml"
+        javaDirectories="src/release/java:src/release/kotlin"
+        resDirectories="src/release/res"
+        assetsDirectories="src/release/assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <manifestPlaceholders>
+    <placeholder
+        name="applicationName"
+        value="android.app.Application" />
+  </manifestPlaceholders>
+  <mainArtifact
+      classOutputs="/Users/felipesouza/Documents/git/ehealthapp/build/app/intermediates/javac/release/classes:/Users/felipesouza/Documents/git/ehealthapp/build/app/tmp/kotlin-classes/release:/Users/felipesouza/Documents/git/ehealthapp/build/app/kotlinToolingMetadata:/Users/felipesouza/Documents/git/ehealthapp/build/app/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/R.jar"
+      applicationId="com.ehealth.ehealthapp"
+      generatedSourceFolders="/Users/felipesouza/Documents/git/ehealthapp/build/app/generated/ap_generated_sources/release/out:/Users/felipesouza/Documents/git/ehealthapp/build/app/generated/aidl_source_output_dir/release/out:/Users/felipesouza/Documents/git/ehealthapp/build/app/generated/source/buildConfig/release:/Users/felipesouza/Documents/git/ehealthapp/build/app/generated/renderscript_source_output_dir/release/out"
+      generatedResourceFolders="/Users/felipesouza/Documents/git/ehealthapp/build/app/generated/res/rs/release:/Users/felipesouza/Documents/git/ehealthapp/build/app/generated/res/resValues/release">
+  </mainArtifact>
+</variant>

@@ -1,0 +1,187 @@
+-- Merging decision tree log ---
+application
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:5:5-35:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.6.0] /Users/felipesouza/.gradle/caches/transforms-3/eb84fe2a90a09ff0bb770dedb80a444d/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] /Users/felipesouza/.gradle/caches/transforms-3/eb84fe2a90a09ff0bb770dedb80a444d/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/felipesouza/.gradle/caches/transforms-3/4f264c60d1d5f0fcd2383758fa60a26e/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/felipesouza/.gradle/caches/transforms-3/4f264c60d1d5f0fcd2383758fa60a26e/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] /Users/felipesouza/.gradle/caches/transforms-3/eb84fe2a90a09ff0bb770dedb80a444d/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:8:9-43
+	android:name
+		INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:7:9-42
+manifest
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:1:1-47:12
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:1:1-47:12
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:1:1-47:12
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:1:1-47:12
+MERGED from [:shared_preferences_android] /Users/felipesouza/Documents/git/ehealthapp/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:permission_handler_android] /Users/felipesouza/Documents/git/ehealthapp/build/permission_handler_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:flutter_localization] /Users/felipesouza/Documents/git/ehealthapp/build/flutter_localization/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] /Users/felipesouza/Documents/git/ehealthapp/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/841c09e8449f70bba86404bde129db94/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/felipesouza/.gradle/caches/transforms-3/03e81dc67a7750905728afe6f506b509/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/4c3b540386c712423ee5a798835021d2/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/dade561f76bd17537e62dac94214f42f/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/d01e69a2a60000a21b25754f0fd220db/transformed/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/3dbf6459b8d92450a759a1f626b182cd/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] /Users/felipesouza/.gradle/caches/transforms-3/eb84fe2a90a09ff0bb770dedb80a444d/transformed/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/felipesouza/.gradle/caches/transforms-3/e825b58574f5aaa8f3f4009f8d62db7d/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/16430f07cc287a443b787c224f0f6560/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/felipesouza/.gradle/caches/transforms-3/cacac2ae15015c3cedde58166fc2bb2a/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/felipesouza/.gradle/caches/transforms-3/85edb537d86a90ba7d2a31b3129a02d4/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/ec5b4dca8b68090b59cb6ad2c3c051b9/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/felipesouza/.gradle/caches/transforms-3/4fb2bec0ee3696767c1dac758896bca2/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/felipesouza/.gradle/caches/transforms-3/4f264c60d1d5f0fcd2383758fa60a26e/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/felipesouza/.gradle/caches/transforms-3/ff46d1396ace0c1d85d46438e9b7019a/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/felipesouza/.gradle/caches/transforms-3/a6a926768c5b7d78562d646592856dfa/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:1:1-47:12
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:1:1-47:12
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:1:1-47:12
+	package
+		INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:1:1-47:12
+		INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:1:1-47:12
+		INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:1:1-47:12
+		INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:2:5-79
+	android:name
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:2:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:3:5-81
+	android:name
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:3:22-78
+queries
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:41:5-46:15
+intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:42:9-45:18
+action#android.intent.action.PROCESS_TEXT
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:43:13-72
+	android:name
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:43:21-70
+data
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:44:13-50
+	android:mimeType
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:44:19-48
+uses-sdk
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+MERGED from [:shared_preferences_android] /Users/felipesouza/Documents/git/ehealthapp/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] /Users/felipesouza/Documents/git/ehealthapp/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:permission_handler_android] /Users/felipesouza/Documents/git/ehealthapp/build/permission_handler_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:permission_handler_android] /Users/felipesouza/Documents/git/ehealthapp/build/permission_handler_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_localization] /Users/felipesouza/Documents/git/ehealthapp/build/flutter_localization/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_localization] /Users/felipesouza/Documents/git/ehealthapp/build/flutter_localization/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/felipesouza/Documents/git/ehealthapp/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/felipesouza/Documents/git/ehealthapp/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/841c09e8449f70bba86404bde129db94/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/841c09e8449f70bba86404bde129db94/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/felipesouza/.gradle/caches/transforms-3/03e81dc67a7750905728afe6f506b509/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/felipesouza/.gradle/caches/transforms-3/03e81dc67a7750905728afe6f506b509/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/4c3b540386c712423ee5a798835021d2/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/4c3b540386c712423ee5a798835021d2/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/dade561f76bd17537e62dac94214f42f/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/dade561f76bd17537e62dac94214f42f/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/d01e69a2a60000a21b25754f0fd220db/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/d01e69a2a60000a21b25754f0fd220db/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/3dbf6459b8d92450a759a1f626b182cd/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/3dbf6459b8d92450a759a1f626b182cd/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] /Users/felipesouza/.gradle/caches/transforms-3/eb84fe2a90a09ff0bb770dedb80a444d/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /Users/felipesouza/.gradle/caches/transforms-3/eb84fe2a90a09ff0bb770dedb80a444d/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/felipesouza/.gradle/caches/transforms-3/e825b58574f5aaa8f3f4009f8d62db7d/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/felipesouza/.gradle/caches/transforms-3/e825b58574f5aaa8f3f4009f8d62db7d/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/16430f07cc287a443b787c224f0f6560/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/16430f07cc287a443b787c224f0f6560/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/felipesouza/.gradle/caches/transforms-3/cacac2ae15015c3cedde58166fc2bb2a/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/felipesouza/.gradle/caches/transforms-3/cacac2ae15015c3cedde58166fc2bb2a/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/felipesouza/.gradle/caches/transforms-3/85edb537d86a90ba7d2a31b3129a02d4/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/felipesouza/.gradle/caches/transforms-3/85edb537d86a90ba7d2a31b3129a02d4/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/ec5b4dca8b68090b59cb6ad2c3c051b9/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/felipesouza/.gradle/caches/transforms-3/ec5b4dca8b68090b59cb6ad2c3c051b9/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/felipesouza/.gradle/caches/transforms-3/4fb2bec0ee3696767c1dac758896bca2/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/felipesouza/.gradle/caches/transforms-3/4fb2bec0ee3696767c1dac758896bca2/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/felipesouza/.gradle/caches/transforms-3/4f264c60d1d5f0fcd2383758fa60a26e/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/felipesouza/.gradle/caches/transforms-3/4f264c60d1d5f0fcd2383758fa60a26e/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/felipesouza/.gradle/caches/transforms-3/ff46d1396ace0c1d85d46438e9b7019a/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/felipesouza/.gradle/caches/transforms-3/ff46d1396ace0c1d85d46438e9b7019a/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/felipesouza/.gradle/caches/transforms-3/a6a926768c5b7d78562d646592856dfa/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/felipesouza/.gradle/caches/transforms-3/a6a926768c5b7d78562d646592856dfa/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+activity#com.ehealth.ehealthapp.MainActivity
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:9:9-29:20
+	android:launchMode
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:12:13-43
+	android:hardwareAccelerated
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:15:13-47
+	android:windowSoftInputMode
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:16:13-55
+	android:exported
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:11:13-36
+	android:configChanges
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:14:13-163
+	android:theme
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:13:13-47
+	android:name
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:10:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:21:13-24:17
+	android:resource
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:23:15-52
+	android:name
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:22:15-70
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:25:13-28:29
+action#android.intent.action.MAIN
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:26:17-68
+	android:name
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:27:17-76
+	android:name
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:27:27-74
+meta-data#flutterEmbedding
+ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:32:9-34:33
+	android:value
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:34:13-30
+	android:name
+		ADDED from /Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:33:13-44
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51

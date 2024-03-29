@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.ehealth.ehealthapp-mergeReleaseResources-9:/values-tr/values-tr.xml",
+            "map": [
+                {
+                    "source": "/Users/felipesouza/.gradle/caches/transforms-3/eb84fe2a90a09ff0bb770dedb80a444d/transformed/core-1.6.0/res/values-tr/values-tr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

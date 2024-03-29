@@ -1,0 +1,4 @@
+#Tue Mar 26 17:52:22 BRT 2024
+base.0=/Users/felipesouza/Documents/git/ehealthapp/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

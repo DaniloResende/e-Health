@@ -1,0 +1,1 @@
+ C:\\Users\\dbdresende\\Documents\\ehealth\\ehealthapp\\.dart_tool\\flutter_build\\59c6b8ebaa66a2b388937bfa1ea88220\\native_assets.yaml: 

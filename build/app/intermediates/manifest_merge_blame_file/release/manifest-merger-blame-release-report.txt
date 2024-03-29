@@ -1,0 +1,115 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ehealth.ehealthapp"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:2:5-79
+11-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:2:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:3:5-81
+12-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:3:22-78
+13    <!--
+14         Required to query activities that can process text, see:
+15         https://developer.android.com/training/package-visibility?hl=en and
+16         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+17
+18         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+19    -->
+20    <queries>
+20-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:41:5-46:15
+21        <intent>
+21-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:42:9-45:18
+22            <action android:name="android.intent.action.PROCESS_TEXT" />
+22-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:43:13-72
+22-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:43:21-70
+23
+24            <data android:mimeType="text/plain" />
+24-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:44:13-50
+24-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:44:19-48
+25        </intent>
+26    </queries>
+27
+28    <application
+29        android:name="android.app.Application"
+29-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:7:9-42
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.6.0] /Users/felipesouza/.gradle/caches/transforms-3/eb84fe2a90a09ff0bb770dedb80a444d/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+31        android:icon="@mipmap/ic_launcher"
+31-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:8:9-43
+32        android:label="ehealthapp" >
+32-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:6:9-35
+33        <activity
+33-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:9:9-29:20
+34            android:name="com.ehealth.ehealthapp.MainActivity"
+34-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:10:13-41
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+35-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:14:13-163
+36            android:exported="true"
+36-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:11:13-36
+37            android:hardwareAccelerated="true"
+37-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:15:13-47
+38            android:launchMode="singleTop"
+38-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:12:13-43
+39            android:theme="@style/LaunchTheme"
+39-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:13:13-47
+40            android:windowSoftInputMode="adjustResize" >
+40-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:16:13-55
+41
+42            <!--
+43                 Specifies an Android theme to apply to this Activity as soon as
+44                 the Android process has started. This theme is visible to the user
+45                 while the Flutter UI initializes. After that, this theme continues
+46                 to determine the Window background behind the Flutter UI.
+47            -->
+48            <meta-data
+48-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:21:13-24:17
+49                android:name="io.flutter.embedding.android.NormalTheme"
+49-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:22:15-70
+50                android:resource="@style/NormalTheme" />
+50-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:23:15-52
+51
+52            <intent-filter>
+52-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:25:13-28:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:26:17-68
+53-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:26:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:27:17-76
+55-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:27:27-74
+56            </intent-filter>
+57        </activity>
+58        <!--
+59             Don't delete the meta-data below.
+60             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+61        -->
+62        <meta-data
+62-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:32:9-34:33
+63            android:name="flutterEmbedding"
+63-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:33:13-44
+64            android:value="2" />
+64-->/Users/felipesouza/Documents/git/ehealthapp/android/app/src/main/AndroidManifest.xml:34:13-30
+65
+66        <uses-library
+66-->[androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+67            android:name="androidx.window.extensions"
+67-->[androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+68            android:required="false" />
+68-->[androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+69        <uses-library
+69-->[androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+70            android:name="androidx.window.sidecar"
+70-->[androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+71            android:required="false" />
+71-->[androidx.window:window:1.0.0-beta04] /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+72    </application>
+73
+74</manifest>

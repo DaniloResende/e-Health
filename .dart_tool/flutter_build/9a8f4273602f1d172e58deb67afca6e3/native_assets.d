@@ -1,0 +1,1 @@
+ /Users/felipesouza/Documents/git/ehealthapp/.dart_tool/flutter_build/9a8f4273602f1d172e58deb67afca6e3/native_assets.yaml: 
