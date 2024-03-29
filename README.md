@@ -1,2 +1,2 @@
 # e-Health
-essay project
+Essay project about fall detection techniques using accelerometer sensor on smartphones.
