@@ -1,0 +1,12 @@
+com.baseflow.permissionhandler.permission_handler_android-jetified-window-java-1.0.0-beta04-0 /Users/felipesouza/.gradle/caches/transforms-3/841c09e8449f70bba86404bde129db94/transformed/jetified-window-java-1.0.0-beta04/res
+com.baseflow.permissionhandler.permission_handler_android-jetified-annotation-experimental-1.1.0-1 /Users/felipesouza/.gradle/caches/transforms-3/a6a926768c5b7d78562d646592856dfa/transformed/jetified-annotation-experimental-1.1.0/res
+com.baseflow.permissionhandler.permission_handler_android-jetified-window-1.0.0-beta04-2 /Users/felipesouza/.gradle/caches/transforms-3/b5201fac4d8e80e3a6eef2c2f03f2995/transformed/jetified-window-1.0.0-beta04/res
+com.baseflow.permissionhandler.permission_handler_android-core-1.6.0-3 /Users/felipesouza/.gradle/caches/transforms-3/eb84fe2a90a09ff0bb770dedb80a444d/transformed/core-1.6.0/res
+com.baseflow.permissionhandler.permission_handler_android-main-4 /Users/felipesouza/.pub-cache/hosted/pub.dev/permission_handler_android-12.0.5/android/src/main/res
+com.baseflow.permissionhandler.permission_handler_android-release-5 /Users/felipesouza/.pub-cache/hosted/pub.dev/permission_handler_android-12.0.5/android/src/release/res
+com.baseflow.permissionhandler.permission_handler_android-pngs-6 /Users/felipesouza/Documents/git/ehealthapp/build/permission_handler_android/generated/res/pngs/release
+com.baseflow.permissionhandler.permission_handler_android-resValues-7 /Users/felipesouza/Documents/git/ehealthapp/build/permission_handler_android/generated/res/resValues/release
+com.baseflow.permissionhandler.permission_handler_android-rs-8 /Users/felipesouza/Documents/git/ehealthapp/build/permission_handler_android/generated/res/rs/release
+com.baseflow.permissionhandler.permission_handler_android-mergeReleaseResources-9 /Users/felipesouza/Documents/git/ehealthapp/build/permission_handler_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.baseflow.permissionhandler.permission_handler_android-mergeReleaseResources-10 /Users/felipesouza/Documents/git/ehealthapp/build/permission_handler_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.baseflow.permissionhandler.permission_handler_android-merged_res-11 /Users/felipesouza/Documents/git/ehealthapp/build/permission_handler_android/intermediates/merged_res/release
