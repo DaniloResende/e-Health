@@ -35,12 +35,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: Theme.of(context).colorScheme.copyWith(
-              primary: primaryColor,
+              primary: AppColors.primaryColor,
             ),
         textTheme: GoogleFonts.poppinsTextTheme(),
-        primaryColor: primaryColor,
+        primaryColor: AppColors.primaryColor,
         appBarTheme: const AppBarTheme(
-          backgroundColor: primaryColor,
+          backgroundColor: AppColors.primaryColor,
         ),
       ),
       routerDelegate: appRouter.delegate(),

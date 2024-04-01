@@ -23,39 +23,41 @@ class _HomePageState extends State<HomePage> {
     _child = const HomeWidget();
     super.initState();
   }
+
   @override
   Widget build(context) {
     // Build a simple container that switches content based of off the selected navigation item
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: white,
+        backgroundColor: AppColors.white,
         extendBody: true,
         body: _child,
         bottomNavigationBar: FluidNavBar(
           icons: [
             FluidNavBarIcon(
-                unselectedForegroundColor:Colors.black,
+                unselectedForegroundColor: Colors.black,
                 svgPath: "assets/images/home.svg",
-                backgroundColor: white,
+                backgroundColor: AppColors.white,
                 extras: {"label": "home"}),
             FluidNavBarIcon(
-                unselectedForegroundColor:Colors.black,
+                unselectedForegroundColor: Colors.black,
                 svgPath: "assets/images/home.svg",
-                backgroundColor: white,
+                backgroundColor: AppColors.white,
                 extras: {"label": "call"}),
             FluidNavBarIcon(
-                unselectedForegroundColor:Colors.black,
+                unselectedForegroundColor: Colors.black,
                 svgPath: "assets/images/icon.svg",
-                backgroundColor: white,
+                backgroundColor: AppColors.white,
                 extras: {"label": "step"}),
             FluidNavBarIcon(
-                unselectedForegroundColor:Colors.black,
+                unselectedForegroundColor: Colors.black,
                 svgPath: "assets/images/icon.svg",
-                backgroundColor: white,
+                backgroundColor: AppColors.white,
                 extras: {"label": "icon"}),
           ],
           onChange: _handleNavigationChange,
-          style: const FluidNavBarStyle(iconUnselectedForegroundColor: Colors.white),
+          style: const FluidNavBarStyle(
+              iconUnselectedForegroundColor: Colors.white),
           scaleFactor: 1.5,
           defaultIndex: 0,
           itemBuilder: (icon, item) => Semantics(
@@ -79,7 +81,7 @@ class _HomePageState extends State<HomePage> {
         case 2:
           _child = const StepWidget();
           break;
-          case 3:
+        case 3:
           _child = const UserWidget();
           break;
       }

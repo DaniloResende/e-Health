@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: white,
+      backgroundColor: AppColors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -88,7 +88,7 @@ class _LoginPageState extends State<LoginPage> {
                     'Esqueceu a senha?',
                     style: TextStyle(
                         fontWeight: FontWeight.w600,
-                        color: primaryColor,
+                        color: AppColors.primaryColor,
                         fontSize: 14),
                   ),
                 ),
@@ -121,7 +121,7 @@ class _LoginPageState extends State<LoginPage> {
                       ' Registre-se',
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
-                        color: primaryColor,
+                        color: AppColors.primaryColor,
                         fontSize: 14,
                       ),
                     )

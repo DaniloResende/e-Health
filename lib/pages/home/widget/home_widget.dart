@@ -1,7 +1,9 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:ehealthapp/features/fall_detector/data/datasources/acelerometer_sensor.dart';
 import 'package:ehealthapp/router/router.dart';
 import 'package:ehealthapp/util/colors.dart';
 import 'package:ehealthapp/widget/button.dart';
+import 'package:ehealthapp/widget/graph.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -17,9 +19,11 @@ class HomeWidget extends StatefulWidget {
 class _HomeWidgetState extends State<HomeWidget> {
   final _controller = ValueNotifier<bool>(false);
   bool _checked = true;
+  final sensorDataProvider = SensorDataProvider();
   @override
   void initState() {
     super.initState();
+    //sensorDataProvider.startListening();
 
     _controller.addListener(() {
       setState(() {
@@ -93,15 +97,16 @@ class _HomeWidgetState extends State<HomeWidget> {
               ),
             ),
           ),
+          // *********
           Visibility(
             visible: _checked,
             child: Center(
-              child: Image.asset(
-                'assets/images/graph.png',
-                height: 280,
+              child: LineChartSample2(
+                sensorDataProvider: sensorDataProvider,
               ),
             ),
           ),
+          // *********
         ],
       ),
     );
@@ -109,7 +114,7 @@ class _HomeWidgetState extends State<HomeWidget> {
 
   dialogCustom() {
     Dialog dialog = Dialog(
-      backgroundColor: colorDialog,
+      backgroundColor: AppColors.colorDialog,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
       child: SizedBox(
         height: 330,
@@ -137,11 +142,11 @@ class _HomeWidgetState extends State<HomeWidget> {
             ),
             Button(
                 height: 52,
-                color: colorDialogButton,
+                color: AppColors.colorDialogButton,
                 text: 'Queda Confirmada',
                 fontSize: 16,
                 onTap: () {
-                  AutoRouter.of(context).replace(const WelcomeRoute());
+                  AutoRouter.of(context).replace(const HomeRoute());
                 }),
             Button(
                 padding: EdgeInsets.zero,
@@ -150,7 +155,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                 text: 'Alarme Falso',
                 fontSize: 16,
                 onTap: () {
-                  AutoRouter.of(context).replace(const WelcomeRoute());
+                  AutoRouter.of(context).replace(const HomeRoute());
                 }),
             const SizedBox(
               height: 30,

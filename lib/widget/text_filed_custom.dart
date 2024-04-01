@@ -34,8 +34,8 @@ class TextFieldCustom extends StatelessWidget {
     this.focus,
     this.fontSize = 14,
     this.enable = true,
-    this.color = colorTextField,
-    this.colorText = primaryColor,
+    this.color = AppColors.colorTextField,
+    this.colorText = AppColors.primaryColor,
     required this.obscureText,
   });
 

@@ -13,4 +13,5 @@ com.ehealth.ehealthapp-merged_res-11 C:\Users\dbdresende\Documents\Projeto\e_hea
 com.ehealth.ehealthapp-packaged_res-12 C:\Users\dbdresende\Documents\Projeto\e_health\build\flutter_localization\intermediates\packaged_res\debug
 com.ehealth.ehealthapp-packaged_res-13 C:\Users\dbdresende\Documents\Projeto\e_health\build\path_provider_android\intermediates\packaged_res\debug
 com.ehealth.ehealthapp-packaged_res-14 C:\Users\dbdresende\Documents\Projeto\e_health\build\permission_handler_android\intermediates\packaged_res\debug
-com.ehealth.ehealthapp-packaged_res-15 C:\Users\dbdresende\Documents\Projeto\e_health\build\shared_preferences_android\intermediates\packaged_res\debug
+com.ehealth.ehealthapp-packaged_res-15 C:\Users\dbdresende\Documents\Projeto\e_health\build\sensors_plus\intermediates\packaged_res\debug
+com.ehealth.ehealthapp-packaged_res-16 C:\Users\dbdresende\Documents\Projeto\e_health\build\shared_preferences_android\intermediates\packaged_res\debug

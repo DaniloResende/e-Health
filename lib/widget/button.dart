@@ -11,10 +11,10 @@ class Button extends StatelessWidget {
   final bool? loading;
   final Color color;
   final bool enabled;
-  final IconData? icon ;
+  final IconData? icon;
 
-
-   const Button({super.key,
+  const Button({
+    super.key,
     this.text,
     this.onTap,
     this.padding,
@@ -25,7 +25,7 @@ class Button extends StatelessWidget {
     this.icon,
     Color? color,
     this.enabled = true,
-  }) : this.color = color ?? primaryColor;
+  }) : this.color = color ?? AppColors.primaryColor;
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class Button extends StatelessWidget {
           width: width,
           height: height,
           decoration: BoxDecoration(
-            color: color ,
+            color: color,
             borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(10.0),
               bottomLeft: Radius.circular(10.0),
@@ -50,10 +50,12 @@ class Button extends StatelessWidget {
           ),
           child: Center(
             child: loading == null
-                ?  icon == null ? _getText() : _getTextIcon()
+                ? icon == null
+                    ? _getText()
+                    : _getTextIcon()
                 : loading!
-                ? _getLoading()
-                : _getText(),
+                    ? _getLoading()
+                    : _getText(),
           ),
         ),
       ),
@@ -65,7 +67,7 @@ class Button extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Text(
-            text!,
+          text!,
           style: TextStyle(
             color: color == Colors.transparent ? Colors.black : Colors.white,
             fontSize: fontSize,
@@ -85,7 +87,6 @@ class Button extends StatelessWidget {
       ],
     );
   }
-
 
   Widget _getText() {
     return Text(
@@ -108,8 +109,6 @@ class Button extends StatelessWidget {
   }
 }
 
-
-
 class ButtonImage extends StatelessWidget {
   final String? text;
   final String image;
@@ -122,8 +121,8 @@ class ButtonImage extends StatelessWidget {
   final Color color;
   final bool enabled;
 
-
-  const ButtonImage({super.key,
+  const ButtonImage({
+    super.key,
     this.text,
     required this.image,
     this.onTap,
@@ -134,7 +133,7 @@ class ButtonImage extends StatelessWidget {
     this.loading,
     Color? color,
     this.enabled = true,
-  }) : this.color = color ?? primaryColor;
+  }) : this.color = color ?? AppColors.primaryColor;
 
   @override
   Widget build(BuildContext context) {
@@ -149,7 +148,7 @@ class ButtonImage extends StatelessWidget {
           width: width,
           height: height,
           decoration: BoxDecoration(
-            color: color ,
+            color: color,
             borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(20.0),
               bottomLeft: Radius.circular(20.0),
@@ -159,10 +158,10 @@ class ButtonImage extends StatelessWidget {
           ),
           child: Center(
             child: loading == null
-                ?   _getTextImage()
+                ? _getTextImage()
                 : loading!
-                ? _getLoading()
-                : _getTextImage(),
+                    ? _getLoading()
+                    : _getTextImage(),
           ),
         ),
       ),
@@ -174,7 +173,7 @@ class ButtonImage extends StatelessWidget {
       children: [
         Flexible(
           flex: 1,
-          child:Image.asset(image),
+          child: Image.asset(image),
         ),
         Flexible(
           flex: 3,
@@ -182,17 +181,17 @@ class ButtonImage extends StatelessWidget {
             child: Text(
               text!,
               style: TextStyle(
-                color: color == Colors.transparent ? primaryColor : Colors.white,
-                fontSize: fontSize,fontWeight: FontWeight.w600
-              ),
+                  color: color == Colors.transparent
+                      ? AppColors.primaryColor
+                      : Colors.white,
+                  fontSize: fontSize,
+                  fontWeight: FontWeight.w600),
             ),
           ),
         ),
       ],
     );
   }
-
-
 
   Widget _getLoading() {
     return const SizedBox(
@@ -204,8 +203,3 @@ class ButtonImage extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
