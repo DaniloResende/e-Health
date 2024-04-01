@@ -126,7 +126,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
   LineChartData mainData() {
     return LineChartData(
       gridData: FlGridData(
-        show: true,
+        show: false,
         drawVerticalLine: false,
         horizontalInterval: 100,
         verticalInterval: 1,
@@ -155,7 +155,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
           sideTitles: SideTitles(
             showTitles: true,
             reservedSize: 30,
-            interval: 1,
+            interval: 30,
             getTitlesWidget: bottomTitleWidgets,
           ),
         ),
@@ -173,7 +173,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
         border: Border.all(color: AppColors.primaryColor, width: 0.7),
       ),
       minX: 0,
-      maxX: 2,
+      maxX: 60,
       minY: -1,
       maxY: 3,
       lineBarsData: [
@@ -185,7 +185,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
           isStrokeCapRound: true,
           dotData: const FlDotData(show: false),
           belowBarData: BarAreaData(
-            show: true,
+            show: false,
             color: ColorTween(
               begin: gradientColors[0].withOpacity(0.3),
               end: gradientColors[1].withOpacity(0.3),
