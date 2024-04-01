@@ -17,13 +17,13 @@ class SensorDataProvider {
     );
   }
 
-  // void listenHate() {
-  //   _accelerometerSubscription =
-  //       accelerometerEventStream(samplingPeriod: SensorInterval.normalInterval)
-  //           .listen(
-  //     (event) => _accelerometerEventController.add(event),
-  //   );
-  // }
+  void listenHate1s() {
+    _accelerometerSubscription =
+        accelerometerEventStream(samplingPeriod: Duration(seconds: 1))
+            .listen(
+      (event) => _accelerometerEventController.add(event),
+    );
+  }
 
   Stream<AccelerometerEvent> get accelerometerStream =>
       _accelerometerEventController.stream;

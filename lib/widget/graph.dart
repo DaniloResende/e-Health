@@ -31,32 +31,24 @@ class _LineChartSample2State extends State<LineChartSample2> {
   @override
   void initState() {
     super.initState();
-    // Assumindo que você tem uma instância de SensorDataProvider chamada sensorDataProvider
-    // SensorDataProvider sensorDataProvider = SensorDataProvider();
-    widget.sensorDataProvider
-        .startListening(); // Certifique-se de que a escuta foi iniciada
+
+    widget.sensorDataProvider.listenHate1s(); // Certifique-se de que a escuta foi iniciada
     _accelerometerSubscription =
         widget.sensorDataProvider.accelerometerStream.listen((event) {
       print('$event');
       setState(() {
         double nextIndex =
-            sensorDataSpots.isNotEmpty ? sensorDataSpots.last.x + 1 : 0;
-        double newY = event.x.clamp(-1, 3);
-        sensorDataSpots.add(FlSpot(nextIndex++, newY));
+            (sensorDataSpots.isNotEmpty ? sensorDataSpots.last.x + 1 : 0);
+        double newX = nextIndex.clamp(0, 60);
+        double newY = event.x.clamp(-3, 9);
+        sensorDataSpots.add(FlSpot(newX, newY));
 
-        if (sensorDataSpots.length > 100) {
-          sensorDataSpots.clear(); // Limpa os pontos existentes
-          nextIndex = 0; // Reseta o índice x para 0
+        if (newX >= 60) {
+          sensorDataSpots.clear();
+          sensorDataSpots.add(FlSpot(0, event.x.clamp(-3, 9))); // Limpa os pontos existentes
+          nextIndex = 0;
+          
         }
-        // Clamping o valor de x para que não ultrapasse os limites do gráfico
-
-        // double newX = nextIndex.clamp(0, 1.92); //  eixo x
-        // // Clamping o valor de y (event.x neste caso) para limites definidos, por exemplo, -10 a 10
-        // double newY =
-        //     event.x.clamp(-1, 1); // Ajuste os limites conforme necessário
-
-        // sensorDataSpots.add(FlSpot(newX, newY));
-        // nextIndex++;
       });
     });
   }
@@ -162,7 +154,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
         leftTitles: AxisTitles(
           sideTitles: SideTitles(
             showTitles: true,
-            interval: 1,
+            interval: 9,
             getTitlesWidget: leftTitleWidgets,
             reservedSize: 42,
           ),
@@ -174,8 +166,8 @@ class _LineChartSample2State extends State<LineChartSample2> {
       ),
       minX: 0,
       maxX: 60,
-      minY: -1,
-      maxY: 3,
+      minY: -9,
+      maxY: 9,
       lineBarsData: [
         LineChartBarData(
           spots: sensorDataSpots,
@@ -185,7 +177,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
           isStrokeCapRound: true,
           dotData: const FlDotData(show: false),
           belowBarData: BarAreaData(
-            show: false,
+            show: true,
             color: ColorTween(
               begin: gradientColors[0].withOpacity(0.3),
               end: gradientColors[1].withOpacity(0.3),
