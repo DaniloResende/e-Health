@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:ehealthapp/router/router.dart';
 import 'package:ehealthapp/util/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -71,7 +72,8 @@ class _HelpPageState extends State<HelpPage> {
               ),
               GestureDetector(
                 onTap: () {
-                  print('testeeee');
+                  // Botao para definir rota!
+                  AutoRouter.of(context).push(const HomeRoute());
                 },
                 child: Center(
                   child: Image.asset(

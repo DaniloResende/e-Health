@@ -23,7 +23,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
   ];
   List<FlSpot> sensorDataSpots = [];
   StreamSubscription<AccelerometerEvent>? _accelerometerSubscription;
-  bool showAvg = false;
+  //bool showAvg = false;
   List<FlSpot> sensorDataSpotsX = []; // Valores do eixo X
   List<FlSpot> sensorDataSpotsY = []; // Valores do eixo Y
   List<FlSpot> sensorDataSpotsZ = []; // Valores do eixo Z
@@ -32,7 +32,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
   void initState() {
     super.initState();
 
-    widget.sensorDataProvider.listenHate1s(); // Certifique-se de que a escuta foi iniciada
+    widget.sensorDataProvider.startListening(); // Certifique-se de que a escuta foi iniciada
     _accelerometerSubscription =
         widget.sensorDataProvider.accelerometerStream.listen((event) {
       print('$event');
@@ -56,6 +56,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
   @override
   void dispose() {
     _accelerometerSubscription?.cancel();
+    widget.sensorDataProvider.stopListening();
     super.dispose();
   }
 
@@ -68,21 +69,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
           child: Padding(
             padding:
                 const EdgeInsets.only(right: 18, left: 12, top: 24, bottom: 12),
-            child: LineChart(showAvg ? avgData() : mainData()),
-          ),
-        ),
-        // O botão para alternar entre a visão média e a visão principal
-        Positioned(
-          child: TextButton(
-            onPressed: () {
-              setState(() {
-                showAvg = !showAvg;
-              });
-            },
-            child: Text('avg',
-                style: TextStyle(
-                    fontSize: 10,
-                    color: showAvg ? Colors.blueAccent : Colors.blueAccent)),
+            child: LineChart(mainData()),
           ),
         ),
       ],

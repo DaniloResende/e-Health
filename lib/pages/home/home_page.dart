@@ -41,12 +41,12 @@ class _HomePageState extends State<HomePage> {
                 extras: {"label": "home"}),
             FluidNavBarIcon(
                 unselectedForegroundColor: Colors.black,
-                svgPath: "assets/images/home.svg",
+                svgPath: "assets/images/call2.svg",
                 backgroundColor: AppColors.white,
                 extras: {"label": "call"}),
             FluidNavBarIcon(
                 unselectedForegroundColor: Colors.black,
-                svgPath: "assets/images/icon.svg",
+                svgPath: "assets/images/step.svg",
                 backgroundColor: AppColors.white,
                 extras: {"label": "step"}),
             FluidNavBarIcon(

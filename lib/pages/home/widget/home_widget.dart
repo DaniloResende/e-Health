@@ -8,6 +8,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_advanced_switch/flutter_advanced_switch.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeWidget extends StatefulWidget {
   const HomeWidget({super.key});
@@ -18,12 +19,13 @@ class HomeWidget extends StatefulWidget {
 
 class _HomeWidgetState extends State<HomeWidget> {
   final _controller = ValueNotifier<bool>(false);
-  bool _checked = true;
+  bool _checked = false;
   final sensorDataProvider = SensorDataProvider();
   @override
   void initState() {
     super.initState();
-    //sensorDataProvider.startListening();
+    _loadCheckedState();
+    
 
     _controller.addListener(() {
       setState(() {
@@ -32,8 +34,21 @@ class _HomeWidgetState extends State<HomeWidget> {
         } else {
           _checked = false;
         }
+        _saveCheckedState();
       });
     });
+  }
+  _loadCheckedState() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _checked = prefs.getBool('checked') ?? false;
+      _controller.value = _checked;
+    });
+  }
+
+  _saveCheckedState() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setBool('checked', _checked);
   }
 
   @override
@@ -135,7 +150,7 @@ class _HomeWidgetState extends State<HomeWidget> {
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 16),
               child: Text(
-                "Ao não pressionar nenhum botão em 1 minuto, os seus contatos de emergência serão contatados!",
+                "Ao não pressionar nenhum botão por 1 minuto, os seus contatos de emergência serão contatados!",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
               ),
@@ -146,7 +161,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                 text: 'Queda Confirmada',
                 fontSize: 16,
                 onTap: () {
-                  AutoRouter.of(context).replace(const HomeRoute());
+                  // BOTAO PARA DISPARAR SMS
+                  AutoRouter.of(context).push(const HomeRoute());
                 }),
             Button(
                 padding: EdgeInsets.zero,
@@ -155,7 +171,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                 text: 'Alarme Falso',
                 fontSize: 16,
                 onTap: () {
-                  AutoRouter.of(context).replace(const HomeRoute());
+                  // BOTAO PARA VOLTAR A DETECTAR QUEDAS
+                  AutoRouter.of(context).push(const HomeRoute());
                 }),
             const SizedBox(
               height: 30,
