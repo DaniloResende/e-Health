@@ -56,7 +56,6 @@ class _LineChartSample2State extends State<LineChartSample2> {
   @override
   void dispose() {
     _accelerometerSubscription?.cancel();
-    widget.sensorDataProvider.stopListening();
     super.dispose();
   }
 
